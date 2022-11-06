@@ -1,2 +1,2 @@
 # E-commerceWeb
-In this project, I will try to replicate https://www.vietvocal.com/
+In this project, We will make a pet shop website
