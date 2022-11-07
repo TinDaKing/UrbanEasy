@@ -724,6 +724,11 @@ Banner Style
 --------------------------------------------- 
 */
 
+#list {
+  color:#e7e7e7;
+  font-size: 20px;
+  font-style: bold;
+}
 .main-banner {
   background-repeat: no-repeat;
   background-position: center center;
