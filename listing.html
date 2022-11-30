@@ -26,6 +26,76 @@
   </head>
 
 <body>
+  <div class="sign-in-modal">
+  
+    <div class="backdrop">
+      
+    </div>
+    <div class="sign-in-form mb-3">
+      <div class="sign-in-header">
+        <button id="remove-button">
+          <i class="fa-solid fa-xmark"></i></button>
+        <div>Log in or Sign up</div>
+      </div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Log in</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</button>
+          </li>
+        </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <form>
+            <h5>Welcome back to UrbanEasy</h5>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <form>
+            <h5>Welcome to UrbanEasy</h5>
+            <div class="mb-3">
+              <label for="email1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email1" >
+            </div>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput">
+            </div>
+            <div class="mb-3">
+              <label for="password1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password1">
+            </div>
+            <div class="mb-3">
+              <label for="password2" class="form-label">Repeat Password</label>
+              <input type="password" class="form-control" id="password2">
+            </div>
+            <div class="mb-3 ">
+              <div id="emailHelp" class="form-text">We'll never share your information with anyone else.</div>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -823,6 +893,8 @@
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/signInFunction.js"></script>
+
 
 </body>
 
