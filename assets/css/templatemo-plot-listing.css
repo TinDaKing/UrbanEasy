@@ -2098,7 +2098,7 @@ responsive
   z-index: 100;
   background-color: white;
   width:  500px;
-  color: black;
+  color: #3d424b;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2146,4 +2146,23 @@ responsive
 
 .sign-in-modal {
   display: none;
+}
+
+.form-control{
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #8D99AF;
+  border-radius: 0%;
+}
+
+.form-label {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+small {
+  color:rgb(216, 4, 4);
+
 }

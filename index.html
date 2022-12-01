@@ -47,16 +47,18 @@
           </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <form>
+            <form id="form-login">
               <h5>Welcome back to UrbanEasy</h5>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control error" id="exampleInputEmail1" placeholder="name@email.com" aria-describedby="emailHelp">
+                <small></small>
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
+                <input type="password" class="form-control" placeholder="Enter your password" id="exampleInputPassword1">
+                <small></small>
+              </div>  
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -67,23 +69,27 @@
             </form>
           </div>
           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <form>
+            <form id="form-register">
               <h5>Welcome to UrbanEasy</h5>
               <div class="mb-3">
                 <label for="email1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email1" >
+                <input type="email" class="form-control" id="email1" placeholder="name@email.com" >
+                <small></small>
               </div>
               <div class="mb-3">
                 <label for="nameInput" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nameInput">
+                <input type="text" class="form-control" id="nameInput" placeholder="Input your name here">
+                <small></small>
               </div>
               <div class="mb-3">
                 <label for="password1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password1">
+                <input type="password" class="form-control" id="password1" placeholder="Create password">
+                <small></small>
               </div>
               <div class="mb-3">
-                <label for="password2" class="form-label">Repeat Password</label>
-                <input type="password" class="form-control" id="password2">
+                <label for="password2" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="password2" placeholder="Confirm password">
+                <small></small>
               </div>
               <div class="mb-3 ">
                 <div id="emailHelp" class="form-text">We'll never share your information with anyone else.</div>
