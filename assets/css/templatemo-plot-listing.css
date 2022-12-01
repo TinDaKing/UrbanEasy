@@ -2095,7 +2095,7 @@ responsive
 
 .sign-in-form {
   position: fixed;
-  z-index: 100;
+  z-index: 110;
   background-color: white;
   width:  500px;
   color: #3d424b;
