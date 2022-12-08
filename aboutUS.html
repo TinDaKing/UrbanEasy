@@ -5,13 +5,12 @@
   <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/favicon.png">
-    <title>Plotlist - Listing HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +23,36 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <script src="https://kit.fontawesome.com/c14056925e.js" crossorigin="anonymous"></script>
 
+    <style>
+      
+      @media screen and (max-width: 75em) {
+        .column {
+          width: auto;
+          display: block;
+        }
+        
+        .card {
+          border: none;
+          padding-left: 110px;
+          padding-right: 110px;
+          background-color: rgb(250, 229, 191);
+          text-align: center;
+          position: relative;
+        }
+        .about-section .row , .about-section .row:before, .about-section .row :after {
+          box-sizing: inherit;
+          
+        }
+      }
+      @media screen and (max-width: 45em) {
 
+        .card {
+          border: none;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    </style>
   </head>
 
 <body>
@@ -49,16 +77,18 @@
         </ul>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-          <form>
+          <form id="form-login">
             <h5>Welcome back to UrbanEasy</h5>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control error" id="exampleInputEmail1" placeholder="name@email.com" aria-describedby="emailHelp">
+              <small></small>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
+              <input type="password" class="form-control" placeholder="Enter your password" id="exampleInputPassword1">
+              <small></small>
+            </div>  
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -69,23 +99,27 @@
           </form>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-          <form>
+          <form id="form-register">
             <h5>Welcome to UrbanEasy</h5>
             <div class="mb-3">
               <label for="email1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email1" >
+              <input type="email" class="form-control" id="email1" placeholder="name@email.com" >
+              <small></small>
             </div>
             <div class="mb-3">
               <label for="nameInput" class="form-label">Name</label>
-              <input type="text" class="form-control" id="nameInput">
+              <input type="text" class="form-control" id="nameInput" placeholder="Input your name here">
+              <small></small>
             </div>
             <div class="mb-3">
               <label for="password1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password1">
+              <input type="password" class="form-control" id="password1" placeholder="Create password">
+              <small></small>
             </div>
             <div class="mb-3">
-              <label for="password2" class="form-label">Repeat Password</label>
-              <input type="password" class="form-control" id="password2">
+              <label for="password2" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="password2" placeholder="Confirm password">
+              <small></small>
             </div>
             <div class="mb-3 ">
               <div id="emailHelp" class="form-text">We'll never share your information with anyone else.</div>
@@ -127,7 +161,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="category.html">Category</a></li>
               <li><a href="listing.html">Listing</a></li>
-              <li><a href="contact.html" class="active">Contact Us</a></li>
+              <li><a href="aboutUS.html" class="active">About</a></li>
               <li><div class="btn btn-secondary login-button"><i class="fa-regular fa-user"></i>&nbsp; Log in</div></li>
               <li><div class="main-white-button"><a href="#"><i class="fa fa-plus"></i> Add Your Listing</a></div></li> 
             </ul>        
@@ -142,20 +176,48 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="page-heading">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="top-text header-text">
-            <h2>About us</h2>
-            <h6>Our team has 2 members:</h6>
-            <ul ID="list">
-                <li>Tai Ha</li>
-                <li>Hoang Tin</li>
-              </ul>
+  <div class="about-banner">
+    <h1>Introduction</h1>
+    <p>A Project by Tai Ha and Hoang Tin. </p>
+    <p>In this project, We will make a website for renting Apartments, Houses.</p>
+  </div>
+
+  <div class="about-section">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./assets/images/hoangtin.jpg" alt="Tin" style="width:100%">
+          <div class="container">
+            <h2><strong>Hoang Tin</strong></h2>
+            <p class="title">CEO & Founder</p>
+            <p>3rd year student from University of Science</p>
+            <p>tranhoangtin3702@gmail.com</p>
+            <p><button type="submit" class="button-3">Contact</button></p>
           </div>
         </div>
       </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="./assets/images/taiha.jpg" alt="Tai" style="width:100%">
+          <div class="container">
+            <h2><strong>Tai Ha</strong></h2>
+            <p class="title">Co-Founder & Art Director</p>
+            <p>2nd year student from Canberra</p>
+            <p>taiha@example.com</p>
+            <p><button type="submit" class="button-3">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="about-banner">
+    <div class="top-text header-text">
+      <h2>Our instructor</h2>
+      <h6>Senior Nguyen Duc Dung</h6>
     </div>
   </div>
 
