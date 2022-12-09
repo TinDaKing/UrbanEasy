@@ -2401,10 +2401,9 @@ input[type="text"]:focus{
   padding: 0 10px;
   align-items: center;
   justify-content: center;
-  padding: 35px;
+  padding: 30px;
   position: relative;
   overflow-x: hidden;
-  max-width: screen;
   background: #fff;
   border-radius: 13px;
 }
@@ -2489,4 +2488,98 @@ input[type="text"]:focus{
 
 }
 
+/* airbnb button */
+
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
 /* product card */
+.product-card{
+  display: grid;
+}
+
+.card2 {
+  max-width: 300px;
+  margin: auto;
+}
+
+.flexing{
+  position: relative;
+}
+
+.layer-hi{
+  position: absolute;
+  top: 16px;
+  right: 3px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}
+.card2 p{
+  text-align: left;
+  padding: 0px;
+}
+.card2 img {
+  height:300px;
+  width: 320px;
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 4%;
+}
