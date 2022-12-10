@@ -37,6 +37,33 @@ const dragStop = () => {
     tabsBox.classList.remove("dragging");
 }
 
+$(document).ready(function(){
+    $( ".footer-icon" ).click(function() {
+    if($(this).hasClass('footer-icon-inactive')) {
+        $( this ).removeClass( "footer-icon-inactive" );
+        $( this ).addClass( "footer-icon-active" );
+    } else {
+        $( this ).removeClass( "footer-icon-active" );
+        $( this ).addClass( "footer-icon-inactive" );
+    }
+
+    });
+});
+
+$(document).ready(function(){
+    $( ".layer-hi" ).click(function() {
+    if($(this).hasClass('liked')) {
+        $( this ).removeClass( "liked" );
+        $(".layer-hi").attr("src","assets/images/favorite-pink-icon.png");
+
+    } else {
+        $( this ).addClass( "liked" );
+        $(".layer-hi").attr("src","assets/images/favorite-icon.png");
+    }
+
+    });
+});
+
 tabsBox.addEventListener("mousedown", () => isDragging = true);
 tabsBox.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);

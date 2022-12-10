@@ -1148,10 +1148,10 @@ Footer
 
 footer {
   z-index: 11;
-  border-top: 1px solid #eee;
+  border-top: 2px solid #eee;
   background-color: white;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 40px;
   padding-right: 40px;
   position: fixed;
@@ -1161,6 +1161,7 @@ footer {
   top:999;
   min-width: 100%;
   bottom: 0;
+  font-weight: 500;
 }
 
 footer h4 {
@@ -1195,7 +1196,7 @@ footer a {
   padding-bottom: 20px;
   border-top: 1px solid #eee;
   justify-content: center;
-  
+
   display: none;
 }
 
@@ -1206,13 +1207,35 @@ footer a {
 .sub-footer a {
   padding-left: 18px;
   padding-right: 18px;
-  
+  margin-bottom: 0px; 
 }
 
 .icon-bnb{
   width: 20px;
   background: url("/assets/images/magnifying-glass-icon.png") image-set(-20px);
   display: inline-block;
+}
+
+.footer-icon {
+  font-size: 20px;
+  color: rgb(191, 191, 191);
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer-icon:hover{
+  color: rgb(151, 151, 151);
+}
+
+.footer-icon-inactive{
+  color:rgb(191, 191, 191);
+}
+
+.footer-icon-active{
+  color:#ff1b2e;
+}
+.footer-icon-active:hover{
+  color:#ff1b2e;
 }
 /* 
 ---------------------------------------------
@@ -2401,11 +2424,10 @@ input[type="text"]:focus{
   padding: 0 10px;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 25px;
   position: relative;
   overflow-x: hidden;
   background: #fff;
-  border-radius: 13px;
 }
 .wrapper .icon2 {
   position: absolute;
@@ -2456,7 +2478,7 @@ input[type="text"]:focus{
 }
 .tabs-box .tab {
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
   white-space: nowrap;
   padding: 4px 4px;
   border-radius: 30px;
@@ -2479,8 +2501,8 @@ input[type="text"]:focus{
   font-weight: 600;
 }
 .tab img{
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
 }
 .tab p{
   text-align: center;
@@ -2536,10 +2558,16 @@ input[type="text"]:focus{
 /* product card */
 .product-card{
   display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-template-rows: repeat(none, 320px);
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
 }
 
 .card2 {
-  max-width: 300px;
+  max-width: 320px;
   margin: auto;
 }
 
@@ -2550,7 +2578,7 @@ input[type="text"]:focus{
 .layer-hi{
   position: absolute;
   top: 16px;
-  right: 3px;
+  right: 16px;
 }
 
 .price {
@@ -2582,4 +2610,36 @@ input[type="text"]:focus{
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 4%;
+}
+.icon-star{
+  font-size: 12px;
+  display: flex; 
+  padding-bottom: 0px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.fa-star{
+  margin:auto;
+}
+.info-card{
+  padding-top: 12px;
+}
+.info-card p{
+  line-height: 1.6;
+  font-size: 14px;
+}
+.info-card .main-name{
+  display: flex;
+}
+.info-card .main-name p{
+  font-size: 15px;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.info-card .price-info{
+  display: flex; 
+  padding-top: 5px;
 }
